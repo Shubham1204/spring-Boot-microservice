@@ -1,0 +1,12 @@
+----insert into user_mst () values ();
+--insert into role_mst (role_name,role_description) values ('admin','admin has all the rights');
+--insert into role_mst (role_name,role_description) values ('user','user has some rights');
+--insert into right_mst (right_name,right_description,right_path) values ('view roles','desc','/path');
+--insert into right_mst (right_name,right_description,right_path) values ('view rights','desc','/path');
+--insert into right_mst (right_name,right_description,right_path) values ('add role','desc','/path');
+--insert into right_mst (right_name,right_description,right_path) values ('add right','desc','/path');
+--insert into right_mst (right_name,right_description,right_path) values ('add menu','desc','/path');
+--insert into right_mst (right_name,right_description,right_path) values ('remove role','desc','/path');
+--insert into right_mst (right_name,right_description,right_path) values ('remove right','desc','/path');
+--insert into right_mst (right_name,right_description,right_path) values ('remove menu','desc','/path');
+--insert into right_mst (right_name,right_description,right_path) values ('remove user','desc','/path');
