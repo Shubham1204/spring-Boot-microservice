@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "848066ef-3fb0-4734-bbe2-f8bcdd48ca9e",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/view",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/view",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"view"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:9090/view",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"view"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Jan 2022 19:49:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"employeeId\": 10,\n        \"employeeName\": \"shubham\",\n        \"employeeContact\": \"0987654321\",\n        \"employeeEmail\": \"shubham@gmail.com\",\n        \"employeeDesignation\": \"Paid Intern\"\n    },\n    {\n        \"employeeId\": 11,\n        \"employeeName\": \"sam\",\n        \"employeeContact\": \"0987654321\",\n        \"employeeEmail\": \"sam@gmail.com\",\n        \"employeeDesignation\": \"Intern\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeName\":\"sam\",\r\n    \"employeeContact\":\"0987654321\",\r\n\t\"employeeEmail\":\"sam@gmail.com\",\r\n\t\"employeeDesignation\":\"Intern\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeName\":\"sam\",\r\n    \"employeeContact\":\"0987654321\",\r\n\t\"employeeEmail\":\"sam@gmail.com\",\r\n\t\"employeeDesignation\":\"Intern\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Jan 2022 19:49:07 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"employeeId\": 11,\n    \"employeeName\": \"sam\",\n    \"employeeContact\": \"0987654321\",\n    \"employeeEmail\": \"sam@gmail.com\",\n    \"employeeDesignation\": \"Intern\"\n}"
+				}
+			]
+		}
+	]
+}

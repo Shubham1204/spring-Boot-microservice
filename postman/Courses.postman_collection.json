@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "699f8f47-2220-475f-acde-1876bd9711ec",
+		"name": "Courses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "courses/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseName\":\"py\",\r\n    \"coursePrice\":\"1234\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"courseDescription\":\"java desc\",\r\n    \"courseImage_path\":\"java/path.img\",\r\n    \"courseInstructor\":\"shubham\",\r\n     \"courseContent\":{\r\n         \"core\":[\"poly\",\"oops\"],\r\n         \"adv\":[\"spring\",\"boot\"]\r\n     }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/courses/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courses",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "courses/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/courses/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courses",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "151192d7-f21b-4913-8fa7-3efccb4343ad",
+		"name": "Invoice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SAP status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "gra1nger",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "c_pigcom",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<invoiceStatusRequest>\n<requestNo>123456789</requestNo>  \n<invoice>\n<invoiceNo>09912994280</invoiceNo>\n</invoice>\n</invoiceStatusRequest>"
+				},
+				"url": {
+					"raw": "https://praalb03.sap.grainger.com:44310/sap/commerce/getInvStatus?sap-client=200",
+					"protocol": "https",
+					"host": [
+						"praalb03",
+						"sap",
+						"grainger",
+						"com"
+					],
+					"port": "44310",
+					"path": [
+						"sap",
+						"commerce",
+						"getInvStatus"
+					],
+					"query": [
+						{
+							"key": "sap-client",
+							"value": "200"
+						}
+					]
+				},
+				"description": "Invoice status in SAP"
+			},
+			"response": []
+		},
+		{
+			"name": "Invoice status",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "gra1nger_user_for_prod",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "invoice_user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://drlconap004.gcom.grainger.com:8443/invoicing/v1/invoice?accountNums=0887185103&custInvoiceNum=9912994280",
+					"protocol": "https",
+					"host": [
+						"drlconap004",
+						"gcom",
+						"grainger",
+						"com"
+					],
+					"port": "8443",
+					"path": [
+						"invoicing",
+						"v1",
+						"invoice"
+					],
+					"query": [
+						{
+							"key": "accountNums",
+							"value": "0887185103"
+						},
+						{
+							"key": "custInvoiceNum",
+							"value": "9912994280"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Failed Count",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "psadmuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerNumber\" :\"0711395979\",\n    \"accountNumber\":\"0871273744\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://drlconap004.gcom.grainger.com:8443/paymentmethodstore/internal/resetCustomerSystemDeletedPaymentCount",
+					"protocol": "https",
+					"host": [
+						"drlconap004",
+						"gcom",
+						"grainger",
+						"com"
+					],
+					"port": "8443",
+					"path": [
+						"paymentmethodstore",
+						"internal",
+						"resetCustomerSystemDeletedPaymentCount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

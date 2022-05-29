@@ -1,0 +1,473 @@
+{
+	"info": {
+		"_postman_id": "7e8fd45f-0fac-4c99-bf25-7ec21deba502",
+		"name": "Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rights",
+			"item": [
+				{
+					"name": "authenticated/rights/getAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHViaGFtQGdtYWlsLmNvbSIsInJpZ2h0cyI6W3siYXV0aG9yaXR5IjoiYWRkIG1lbnUifSx7ImF1dGhvcml0eSI6InVzZXIifV0sImV4cCI6MTY0MDc1OTU3MiwiaWF0IjoxNjQwNzIzNTcyfQ.UkIkV1nkcHZ2QyltnIYuNToPA2TNF1jCZOIHMwi3g68",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/authenticated/rights/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticated",
+								"rights",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authenticated/rights/add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHViaGFtYTk5QGdtYWlsLmNvbSIsInJpZ2h0cyI6W3siYXV0aG9yaXR5IjoiYWRkIHJpZ2h0In0seyJhdXRob3JpdHkiOiJhZGQgc2lkZWJhciJ9LHsiYXV0aG9yaXR5IjoiYWRkIG1lbnUifSx7ImF1dGhvcml0eSI6ImFkZCByaWdodCJ9LHsiYXV0aG9yaXR5IjoiYWRkIHNpZGViYXIifSx7ImF1dGhvcml0eSI6ImFkZCBtZW51In0seyJhdXRob3JpdHkiOiJhZGQgcmlnaHQifSx7ImF1dGhvcml0eSI6ImFkZCBzaWRlYmFyIn0seyJhdXRob3JpdHkiOiJhZGQgbWVudSJ9LHsiYXV0aG9yaXR5IjoiYWRkIHJpZ2h0In0seyJhdXRob3JpdHkiOiJhZGQgc2lkZWJhciJ9LHsiYXV0aG9yaXR5IjoiYWRkIG1lbnUifSx7ImF1dGhvcml0eSI6ImFkZCByaWdodCJ9LHsiYXV0aG9yaXR5IjoiYWRkIHNpZGViYXIifSx7ImF1dGhvcml0eSI6ImFkZCBtZW51In1dLCJleHAiOjE2Mzk0MTcwNzAsImlhdCI6MTYzOTM4MTA3MH0.dr-PsAp5kqnUmjjnpduateOmwLwQZW47E2YcsDkhcvM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rightName\":\"add right side\",\r\n    \"rightDescription\":\"add right desc\",\r\n    \"rightPath\":\"/rights/add\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/authenticated/rights/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticated",
+								"rights",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authenticated/rights/get/add menu",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHViaGFtQGdtYWlsLmNvbSIsInJpZ2h0cyI6W3siYXV0aG9yaXR5IjoiYWRkIG1lbnUifSx7ImF1dGhvcml0eSI6InVzZXIifV0sImV4cCI6MTY0MDc1OTU3MiwiaWF0IjoxNjQwNzIzNTcyfQ.UkIkV1nkcHZ2QyltnIYuNToPA2TNF1jCZOIHMwi3g68",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/authenticated/rights/get/add menu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticated",
+								"rights",
+								"get",
+								"add menu"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "authenticated/roles/getBy Role Name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHViaGFtYTEyNDk5QGdtYWlsLmNvbSIsInJpZ2h0cyI6W3siYXV0aG9yaXR5IjoiYWRkIHJpZ2h0In0seyJhdXRob3JpdHkiOiJhZGQgc2lkZWJhciJ9LHsiYXV0aG9yaXR5IjoiYWRkIG1lbnUifSx7ImF1dGhvcml0eSI6ImFkbWluIn1dLCJleHAiOjE2Mzk2MzY3MTUsImlhdCI6MTYzOTYwMDcxNX0.tjfCXVYz81n6b8pgjCNtvxf4jsNnlXBjXl4Z87xELm0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/authenticated/admin/roles/get/nuser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticated",
+								"admin",
+								"roles",
+								"get",
+								"nuser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authenticated/roles/getAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHViaGFtYTEyNDk5QGdtYWlsLmNvbSIsInJpZ2h0cyI6W3siYXV0aG9yaXR5IjoiYWRkIHJpZ2h0In0seyJhdXRob3JpdHkiOiJhZGQgc2lkZWJhciJ9LHsiYXV0aG9yaXR5IjoiYWRkIG1lbnUifSx7ImF1dGhvcml0eSI6ImFkbWluIn1dLCJleHAiOjE2Mzk2MzY3MTUsImlhdCI6MTYzOTYwMDcxNX0.tjfCXVYz81n6b8pgjCNtvxf4jsNnlXBjXl4Z87xELm0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/authenticated/admin/roles/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticated",
+								"admin",
+								"roles",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authenticated/roles/add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHViaGFtYTk5QGdtYWlsLmNvbSIsInJpZ2h0cyI6W3siYXV0aG9yaXR5IjoiYWRkIHJpZ2h0In0seyJhdXRob3JpdHkiOiJhZGQgc2lkZWJhciJ9LHsiYXV0aG9yaXR5IjoiYWRkIG1lbnUifSx7ImF1dGhvcml0eSI6ImFkZCByaWdodCJ9LHsiYXV0aG9yaXR5IjoiYWRkIHNpZGViYXIifSx7ImF1dGhvcml0eSI6ImFkZCBtZW51In0seyJhdXRob3JpdHkiOiJhZGQgcmlnaHQifSx7ImF1dGhvcml0eSI6ImFkZCBzaWRlYmFyIn0seyJhdXRob3JpdHkiOiJhZGQgbWVudSJ9LHsiYXV0aG9yaXR5IjoiYWRkIHJpZ2h0In0seyJhdXRob3JpdHkiOiJhZGQgc2lkZWJhciJ9LHsiYXV0aG9yaXR5IjoiYWRkIG1lbnUifSx7ImF1dGhvcml0eSI6ImFkZCByaWdodCJ9LHsiYXV0aG9yaXR5IjoiYWRkIHNpZGViYXIifSx7ImF1dGhvcml0eSI6ImFkZCBtZW51In1dLCJleHAiOjE2Mzk0MTcwNzAsImlhdCI6MTYzOTM4MTA3MH0.dr-PsAp5kqnUmjjnpduateOmwLwQZW47E2YcsDkhcvM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"suser\",\r\n    \"roleDescription\":\"add me desc\",\r\n    \"rights\":[\r\n        {\r\n            \"rightName\":\"add menu\"\r\n        }\r\n    ]\r\n}\r\n// {\r\n//             \"rightName\":\"add menu\"\r\n//         },\r\n// ,\r\n// {\r\n        //     \"rightName\":\"add role\"\r\n        // }\r\n        // ,\r\n        // {\r\n        //     \"rightName\":\"add menu\"\r\n        // },",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/authenticated/roles/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticated",
+								"roles",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authenticated/roles/map/right",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHViaGFtQGdtYWlsLmNvbSIsInJpZ2h0cyI6W3siYXV0aG9yaXR5IjoidXNlciJ9XSwiZXhwIjoxNjQwNTg1OTI5LCJpYXQiOjE2NDA1NDk5Mjl9.DKHfl7Y5ttRC3L5tvik4jQ3sTJBqYmtL0NpklQSrHe8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roleName\":\"user\",\r\n    \"rights\":[\r\n        {\r\n            \"rightName\":\"add menu\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/authenticated/roles/map/right",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticated",
+								"roles",
+								"map",
+								"right"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "authenticated/users/getBy User Email",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHViaGFtYTEyNDk5QGdtYWlsLmNvbSIsInJpZ2h0cyI6W3siYXV0aG9yaXR5IjoiYWRkIHJpZ2h0In0seyJhdXRob3JpdHkiOiJhZGQgc2lkZWJhciJ9LHsiYXV0aG9yaXR5IjoiYWRkIG1lbnUifSx7ImF1dGhvcml0eSI6ImFkbWluIn1dLCJleHAiOjE2Mzk4OTExNTgsImlhdCI6MTYzOTg1NTE1OH0.3bTU4rdKNLaQIkGCNCBix-KgIVCwm6lvwtlQEAW_4H8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/authenticated/users/get/shubhama99@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticated",
+								"users",
+								"get",
+								"shubhama99@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authenticated/users/getAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHF3ZXJ0eUBnbWFpbC5jb20iLCJyaWdodHMiOlt7ImF1dGhvcml0eSI6InVzZXIifV0sImV4cCI6MTYzOTk3NTY3NSwiaWF0IjoxNjM5OTM5Njc1fQ.mVx7_5z5dNKnQHBkSgKhDLnvff1YBeQI8lTdQyFsGYQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/authenticated/users/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"authenticated",
+								"users",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"shubham@gmail.com\",\r\n    \"password\":\"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/public/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"public",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"shubhama12499@gmail.com\",\r\n    \"password\":\"1234567890\",\r\n    \"otp\":\"876315\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/public/password/reset",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"public",
+						"password",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgot password and send email otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"shubhama12499@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/public/password/forgot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"public",
+						"password",
+						"forgot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"shubham@gmail.com\",\r\n    \"otp\":\"930110\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/public/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"public",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"sam\",\r\n    \"userEmail\":\"shubham@gmail.com\",\r\n    \"userContact\":\"987654321\",\r\n    \"userPassword\":\"1234567890\",\r\n    \"role\":{\r\n            \"roleName\":\"user\"\r\n        }\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/public/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"public",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "v2/api-docs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v2/api-docs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v2",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

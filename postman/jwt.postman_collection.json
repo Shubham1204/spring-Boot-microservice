@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "c782d07c-74fb-4996-9748-69ba2a23b47b",
+		"name": "jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/addData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/addData",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sam@g.com\",\r\n    \"password\":\"sam\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/token",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/home",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYW1AZy5jb20iLCJleHAiOjE2Mzg4MTc3NTgsImlhdCI6MTYzODc4MTc1OH0.fYRhblulCJlYLufKHF22qEM4UY3l-L6qS1CsAajVy_8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/home",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

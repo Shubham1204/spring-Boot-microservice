@@ -1,0 +1,828 @@
+{
+	"info": {
+		"_postman_id": "c0f84f21-bf75-498e-91f5-0ca06561e442",
+		"name": "Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SideBar",
+			"item": [
+				{
+					"name": "sidebar getByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/menus/sidebar/get/name/qwerty",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"menus",
+								"sidebar",
+								"get",
+								"name",
+								"qwerty"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sidebar getByName",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/menus/sidebar/get/name/qwerty",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"menus",
+										"sidebar",
+										"get",
+										"name",
+										"qwerty"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 04 Nov 2021 20:43:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"6182e48d9f25f44b044aa104\",\n    \"menuName\": \"qwerty\",\n    \"menuUrl\": \"qwer/com\",\n    \"menuImage\": \"esrdgtfh.jpg\",\n    \"menuStatusFlag\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "sidebar remove a menuByName",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"menuName\":\"qwerty2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/menus/sidebar/remove",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"menus",
+								"sidebar",
+								"remove"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sidebar remove a menuByName",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"menuName\":\"qwerty2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/menus/sidebar/remove",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"menus",
+										"sidebar",
+										"remove"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 04 Nov 2021 20:43:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "6182e4979f25f44b044aa107"
+						}
+					]
+				},
+				{
+					"name": "sidebar add menu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"menuName\" : \"12zxcvbnm\",\r\n    \"menuUrl\" : \"asdfg/sd\",\r\n    \"menuImage\" : \"qwe.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/menus/sidebar/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"menus",
+								"sidebar",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sidebar add menu",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"menuName\" : \"12zxcvbnm\",\r\n    \"menuUrl\" : \"asdfg/sd\",\r\n    \"menuImage\" : \"qwe.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/menus/sidebar/add",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"menus",
+										"sidebar",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 04 Nov 2021 20:44:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "12zxcvbnm"
+						}
+					]
+				},
+				{
+					"name": "sidebar update menu",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"6182e48d9f25f44b044aa104\",\r\n    \"menuName\": \"qwerty\",\r\n    \"menuUrl\": \"qwer/com\",\r\n    \"menuImage\": \"esrdgtfh.jpg\",\r\n    \"menuStatusFlag\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/menus/sidebar/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"menus",
+								"sidebar",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sidebar update menu",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"6182e48d9f25f44b044aa104\",\r\n    \"menuName\": \"qwerty\",\r\n    \"menuUrl\": \"qwer/com\",\r\n    \"menuImage\": \"esrdgtfh.jpg\",\r\n    \"menuStatusFlag\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/menus/sidebar/update",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"menus",
+										"sidebar",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "6"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 04 Nov 2021 20:44:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "qwerty"
+						}
+					]
+				},
+				{
+					"name": "secret key add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"secretKey\" : \"mnbvcxzqwe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/secret/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"secret",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "secret key add",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"secretKey\" : \"mnbvcxzqwe\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/secret/add",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"secret",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "5"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 04 Nov 2021 20:44:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "saved"
+						}
+					]
+				},
+				{
+					"name": "secret key getall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/secret/getall",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"secret",
+								"getall"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "secret key getall",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/secret/getall",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"secret",
+										"getall"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 04 Nov 2021 20:44:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"61843fc9f99c453da8a31c58\",\n        \"secretKey\": \"#####weqrdfgbgvgcdd\",\n        \"date\": \"2021-11-04T20:17:40.353+00:00\",\n        \"data\": null\n    },\n    {\n        \"id\": \"61844068f99c453da8a31c5e\",\n        \"secretKey\": \"qwertyweqrdfgbgvgcdd\",\n        \"date\": \"2021-11-04T20:19:55.531+00:00\",\n        \"data\": null\n    },\n    {\n        \"id\": \"6184426af99c453da8a31c6f\",\n        \"secretKey\": \"12345qwertyweqrdfgbgvgcdd\",\n        \"date\": \"2021-11-04T20:28:26.967+00:00\",\n        \"data\": null\n    },\n    {\n        \"id\": \"61844382f99c453da8a31c78\",\n        \"secretKey\": \"mnbvcxz\",\n        \"date\": \"2021-11-04T20:33:05.991+00:00\",\n        \"data\": null\n    },\n    {\n        \"id\": \"61844628b1f20135cb768414\",\n        \"secretKey\": \"mnbvcxzqwe\",\n        \"date\": \"2021-11-04T20:44:24.391+00:00\",\n        \"data\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "secret key get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/secret/get",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"secret",
+								"get"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "secret key get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/secret/get",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"secret",
+										"get"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 04 Nov 2021 20:44:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "mnbvcxzqwe"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "EncryptionDecryption",
+			"item": [
+				{
+					"name": "decrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\" : \"usHzPUYVUFyEEWBKFPVt/Q==\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/decrypt",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"decrypt"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "decrypt",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\" : \"usHzPUYVUFyEEWBKFPVt/Q==\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/decrypt",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"decrypt"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "15"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 04 Nov 2021 20:45:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "qwertyuiop12345"
+						}
+					]
+				},
+				{
+					"name": "encrypt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\" : \"qwertyuiop12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/encrypt",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"encrypt"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "encrypt",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\" : \"qwertyuiop12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/encrypt",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"encrypt"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 04 Nov 2021 20:44:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "usHzPUYVUFyEEWBKFPVt/Q=="
+						}
+					]
+				}
+			]
+		}
+	]
+}
