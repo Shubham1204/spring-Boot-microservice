@@ -1,0 +1,44 @@
+server:
+  port: 9191
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    config:
+      import: optional:configserver:${CONFIG-SERVER:http://localhost:9296}
+      enabled: true
+    gateway:
+      routes:
+        - id: LOGIN-SERVICE
+          uri: lb://LOGIN-SERVICE
+          predicates:
+            - Path=/public/**, /authenticated/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: LOGIN-SERVICE
+                fallbackuri: forward:/loginServiceFallBack
+        - id: COURSE-SERVICE
+          uri: lb://COURSE-SERVICE
+          predicates:
+            - Path=/courses/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: COURSE-SERVICE
+                fallbackuri: forward:/courseServiceFallBack
+
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+           timeoutInMilliseconds: 4000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
